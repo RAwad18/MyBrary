@@ -12,7 +12,8 @@
 </head>
 
 <body>
-    <%- include('../partials/header.ejs') %>    <!-- 2 dots (../) because we need to go back out 2 folders from layouts/layouts.ejs -->
+    <%- include('../partials/header.ejs') %>    
+    <%- include('../partials/errorMessage.ejs') %>
     <%- body %>                                 <!-- the 'body' is importing everything from every single one of our applications -->
 </body>
 

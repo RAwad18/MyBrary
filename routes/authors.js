@@ -21,7 +21,7 @@ router.get('/new', (req, res) => {
 // Create Author Route
 router.post('/', (req, res) => {
     
-    console.log(req.body);
+    // console.log(req.body);
 
     // create new author object using Author schema
     const createdAuthor = new Author({
