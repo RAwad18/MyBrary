@@ -1,0 +1,10 @@
+<label for="name_field">Name</label>
+<input type="text" name="name" id="name_field" value="<%= author.name %>">  <%# accessing the name key from the author object (see authors.js line 18) %>
+
+<%# 
+    The Name attribute
+    name="example"
+        - The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+        - in our case, we can use req.body.example to access the data passed through by the post request
+        - req.body.example would be whatever the user types 
+%> 

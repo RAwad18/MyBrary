@@ -1,0 +1,8 @@
+<h2> New Author </h2>
+<!-- formatted after the Create Author Route  -->
+<form action="/authors" method="post">
+    <!-- using a partial for the form input because it will be used for /new and /edit -->
+    <%- include('_form_fields') %> 
+    <a href="/authors">Cancel</a>   <!-- returns to the list view of the authors -->
+    <button type="submit">Create</button>   <!-- submits the form -->
+</form>

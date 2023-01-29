@@ -1,5 +1,5 @@
-<!-- All of the HTML here is static (except for the <%- body %> ) -->
-<!-- the <%- body %> is importing everything from every single one of our applications -->
+<!-- All of the HTML here is static (except for the 'body' ) -->
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -12,11 +12,8 @@
 </head>
 
 <body>
-    Before
-    <br>
-    <%- body %>
-    <br>
-    After
+    <%- include('../partials/header.ejs') %>    <!-- 2 dots (../) because we need to go back out 2 folders from layouts/layouts.ejs -->
+    <%- body %>                                 <!-- the 'body' is importing everything from every single one of our applications -->
 </body>
 
 </html>
