@@ -1,2 +1,4 @@
 <!-- No if statement yet...waiting until next push -->
-<%= errorMessage %> 
+<% if(locals.errorMessage != null) { %>
+    <%= errorMessage %>
+<% } %>
